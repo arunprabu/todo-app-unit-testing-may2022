@@ -1,0 +1,65 @@
+
+Add Feature 
+--
+  function add(a: number, b: number): number {
+    return a + b;
+  }
+
+  add(10, 20);
+
+----
+Test Cases 
+--
+  1. Inputs should be numbers 
+  2. Output should also be a number 
+  3. If input is other than number -- add btn should be disabled 
+
+
+Software Dev Approach
+--
+  Dev (Writing Test Cases) => Dev (Implementation) => (Tools) => Instant Feedback of Success => Deployment 
+
+  1. TDD - Test Driven Development
+      * TDD is focused on testing smaller pieces of functionality in isolation.
+      * Write dev code only if test fails 
+      * In a TDD approach, automated test scripts are written before functional pieces of code.
+
+      Tools: JEST + React Testing Library 
+  
+  2. BDD - Behavior Driven Development
+      * BDD is designed to test an application's behavior from the end user's standpoint
+      * Approach is derived from TDD 
+      * In BDD, tests are mainly based on systems behavior. 
+
+    Tools: Jasmine JS + Karma or JEST
+
+---
+Testing Pattern: AAA
+  A - Arrange 
+  A - Act 
+  A - Assert 
+---
+
+Automated Testing 
+--
+  0. Static Type Checking
+      Tools: TypeScript or FlowJS, 
+
+  1. Unit Testing 
+      * Testing small independent unit of the component 
+      * Testing the component in isolation 
+      Tools: Jasmine JS (BDD Framework), Karma (Test Runner)
+
+  2. Integration Testing 
+      * Testing the integration of two or more units 
+      * Testing the comp with external resources (HTTP calls)
+      * Doesn't test a complete workflow of the app. 
+      Tools: Jasmine JS (BDD Framework), Karma (Test Runner)
+
+  3. End to End Testing (E2E Testing)
+      * test a complete workflow of the app. 
+      * testiong the whole app from start to finish 
+      Tools: Protractor, CypressJS ,Selenium
+
+
+========
